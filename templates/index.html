@@ -4,26 +4,26 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Summaryzer</title>
+    <title>Short&Crisp</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  </head>
   </head>
 
   <body>
     <div class="navbar-fixed">
       <nav class="grey darken-4" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Summaryzer</a>
+          <a id="logo-container" href="#" class="brand-logo">Short&Crisp</a>
           <ul class="right hide-on-med-and-down">
             <li><a href="{{url_for('index')}}">Home</a></li>
-            <li><a href="{{url_for('compare_summary')}}">Compare Summarizers</a></li>
             <li><a href="#aboutapp">About</a></li>
+            <li><a href="#index-banner2">Contact</a></li>
           </ul>
 
 
@@ -33,21 +33,23 @@
     </div>
     <ul id="nav-mobile" class="sidenav">
       <li><a href="{{url_for('index')}}">Home</a></li>
-      <li><a href="{{url_for('compare_summary')}}">Compare</a></li>
-      <li><a href="#contactme">About</a></li>
+      <li><a href="#aboutapp">About</a></li>
+      <li><a href="#index-banner2">Contact</a></li>
     </ul>
     <!--Slider -->
     <section class="slider">
       <div id="index-banner" class="parallax-container">
         <ul class="slides">
           <li>
-            <img src="backgroundblue.png" alt="Unsplashed background img 1" alt="">
+            <img src="../static/imagesforapp/background.jpg" alt="Unsplashed background img 1" style="object-fit: cover;
+   opacity: 0.8;">
             <div class="caption center-align">
+              <br>
               <h2>Summarization Simplified</h2>
-              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                Using SpaCy,Gensim,NLTK and Sumy
+              <h5>
+                Using SpaCy, Gensim, NLTK and Sumy
               </h5>
-
+              <br>
               <div class="row center">
                 <a href="{{url_for('index')}}" id="download-button"
                   class="btn-large waves-effect waves-light blue lighten-1">Refresh</a>
@@ -55,12 +57,14 @@
             </div>
           </li>
           <li>
-            <img src="backgroundpurple.png" alt="Unsplashed background img 1">
-            <div class="caption left-align">
-              <h2>Text Summarizer with SpaCy</h2>
+            <img src="../static/imagesforapp/background.jpg" alt="Unsplashed background img 1">
+            <div class="caption center-align">
+              <br>
+              <h2>Enter your content or URL</h2>
               <h5 class="light grey-text text-lighten-3 hide-on-small-only">
-                NLP based App
+                Get Results Instantly
               </h5>
+              <br>
               <a href="#aboutapp" class="btn btn-large waves-effect waves-light light-blue lighten-1">Learn More</a>
             </div>
           </li>
@@ -68,14 +72,53 @@
         </ul>
       </div>
     </section>
+    <div class="about-section">
+      <div class="inner-container">
+        <h1>About</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum,
+          eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque
+          voluptates sit deleniti autem error eos totam nisi neque.
+        </p>
+        <div class="skills">
+          <span>Web Design</span>
+          <span>Photoshop & Illustrator</span>
+          <span>Coding</span>
+        </div>
+      </div>
+    </div>
 
+    <section class="slider">
+      <div id="index-banner3" class="parallax-container">
+        <ul class="slides">
+          <li>
+            <img src="../static/imagesforapp/senti-bg-1.png" alt="Unsplashed background img 1" style="object-fit: cover;
+   opacity: 0.7;">
+            <div class="caption center-align">
+              <br>
+              <br>
+              <h2>Paste your Content/URL</h2>
+              <h5>
+                The result will be shown below
+              </h5>
+              <br>
+              <!-- <div class="row center">
+                <a href="mailto:harshdasrox007@gmail.com" id="download-button"
+                  class="btn-large waves-effect waves-light lighten-1"
+                  style="border-radius: 5px; background-color:#f32853;">Get In Touch</a>
+              </div> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Start of Main Section -->
     <div class="container">
       <div class="section">
 
         <!--   Icon Section   -->
         <div class="row">
-          <div class="input-field col s12 m10">
+          <div class="input-field col s12 m12">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
               <form method="POST" action="/analyze">
@@ -93,7 +136,7 @@
         </div>
 
         <div class="row">
-          <div class="input-field col s12 m10">
+          <div class="input-field col s12 m12">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
               <form method="POST" action="/analyze_url">
@@ -117,7 +160,7 @@
 
         <!--   Icon Section   -->
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s12 m5 grey darken-3">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">group</i></h2>
               <h5 class="center">Your Text</h5>
@@ -129,8 +172,8 @@
               </div>
             </div>
           </div>
-
-          <div class="col s12 m6 grey darken-3">
+          <div class="col s12 m2"></div>
+          <div class="col s12 m5 grey darken-3">
             <div class="icon-block">
               <h2 class="center brown-text"><i class="material-icons">chrome_reader_mode</i></h2>
               <h5 class="center">Summarized</h5>
@@ -147,40 +190,66 @@
 
       </div>
     </section>
-
-
-
+    <section class="slider">
+      <div id="index-banner2" class="parallax-container">
+        <ul class="slides">
+          <li>
+            <img src="../static/imagesforapp/senti-bg-2.jpg" alt="Unsplashed background img 1" style="object-fit: cover;
+   opacity: 0.3;">
+            <div class="caption center-align">
+              <br>
+              <h2>Contact</h2>
+              <h5>
+                To know more about this project
+              </h5>
+              <br>
+              <div class="row center">
+                <a href="mailto:harshdasrox007@gmail.com" id="download-button"
+                  class="btn-large waves-effect waves-light lighten-1"
+                  style="border-radius: 5px; background-color:#f32853;">Get In Touch</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <footer class="page-footer grey darken-4">
       <div class="container" id="aboutapp">
         <div class="row">
-          <div class="col l6 s12">
+          <!-- <div class="col l3 s12">
             <h5 class="white-text">About Summary App</h5>
-            <p class="grey-text text-lighten-4">Using Spacy,NLTk and Gensim for Text Summarization
-              .</p>
-
-
+            <p class="grey-text text-lighten-4">Using Spacy,NLTk and Gensim for Text Summarization.</p>
           </div>
-
           <div class="col l3 s12">
-            <h5 class="white-text">Connect With Me</h5>
+          </div>
+          <div class="col l3 s12">
+          </div> -->
+          <div class="col l3 s12">
+          </div>
+          <div class="col l6 s12" style="text-align: center;">
+            <!-- <h5 class="white-text">Connect With Me</h5> -->
             <ul>
-              <a href="#" target="_blank" class="white-text">
-                <i class="fab fa-facebook fa-4x"></i>
+              <a href="#" target="_blank" class="white-text" style="margin-right: 15px;">
+                <i class="fab fa-github fa-2x"></i>
               </a>
-              <a href="#" target="_blank" class="white-text">
-                <i class="fab fa-linkedin fa-4x"></i>
+              <a href="#" target="_blank" class="white-text" style="margin-right: 15px;">
+                <i class="fab fa-facebook fa-2x"></i>
               </a>
-              <a href="#" target="_blank" class="white-text">
-                <i class="fab fa-github-square fa-4x"></i>
+              <a href="#" target="_blank" class="white-text" style="margin-right: 15px;">
+                <i class="fab fa-instagram fa-2x"></i>
               </a>
             </ul>
+            <!-- <ul class="copyright">
+              <li>&copy; Harsh Das</li>
+            </ul> -->
+          </div>
+          <div class="col l3 s12">
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
-          Made by <a class="white-text text-lighten-3" href="#">Harsh Das</a><br />
-          <a class="white-text text-lighten-3" href="#">Rinzler</a>
+        <div class="container" style="text-align: center;">
+          &copy; Harsh Das
         </div>
       </div>
     </footer>
