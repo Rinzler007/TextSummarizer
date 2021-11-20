@@ -9,7 +9,7 @@ Short&Crisp is a web app integrated on Flask Framework which gives a summary of 
 
 ## Flowchart of Methodology
 
-![Flowchart](/TelloTweet.png)
+![Flowchart](/Short&Crisp.png)
 
 ## I/O Screenshots
 
