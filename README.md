@@ -13,12 +13,18 @@ Short&Crisp is a web app integrated on Flask Framework which gives a summary of 
 
 ## I/O Screenshots
 
-### Input 
+### Text Input 
 
 ![Flowchart](/1.png)
 
-### Output
+### Text Output
 
 ![Flowchart](/2.png)
+
+### URL Input 
+
 ![Flowchart](/3.png)
+
+### URL Output
+
 ![Flowchart](/4.png)
